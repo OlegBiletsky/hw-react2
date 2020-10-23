@@ -16,7 +16,7 @@ class Input extends React.Component {
 
     render() {
         return(
-            <div>
+            <div> {/*місце розташування наступних компонентів не важливе для логіки, тільки хіба для відображення */}
                 <input
                     type="text"
                     onChange = {this.handleChange}

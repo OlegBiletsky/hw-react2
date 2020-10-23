@@ -1,6 +1,7 @@
 import React from 'react';
 import Display from './components/display/display';
 import Input from './components/input/input';
+import ComponentA from './components/mathrandom/componentA'
 
 function App(props) {
     let str1 = "1. Створити класовий компонент в якому з допомогою стану компоненту всі дані з інпута в який юзер буде вводити тест - будуть в режимі реального часу відображатись в функціональному компоненті в h1 тегу.";
@@ -8,9 +9,10 @@ function App(props) {
   return (
       <>
         <Display text={str1}/> {/* рендерим просто для відображення 1 завдання =)*/}
-        <Input />
+        <Input /> {/*рендерим компонент з логікою, а він вже в середині відрендерить компонент Display із відображенням логіки онлайн*/}
         <Display text={str2}/> {/* рендерим просто для відображення 2 завдання =)*/}
 
+        <ComponentA/>
 
       </>
   );
