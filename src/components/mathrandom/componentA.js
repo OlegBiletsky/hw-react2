@@ -34,10 +34,8 @@ class ComponentA extends React.Component {
     }
     
     render() {
-        
         return(
             <>
-                {/* <ComponentB f1={this.generateRandomNumber}/> */}
                 <ComponentB f1={this.multiplyAndSetState}/>
             </>
         )
